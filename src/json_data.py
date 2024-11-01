@@ -6,8 +6,9 @@ def create_df(filename):
     return pd.json_normalize(df["doughnut_data"])
 
 
-def increase_price(df):
-    pass
+def increase_price(df, percentage):
+    df["price"] = df["price"] * ((100 + percentage) / 100)
+    return df
 
 
 def get_best_value(df):
