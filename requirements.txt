@@ -65,6 +65,8 @@ idna==3.7
     #   httpx
     #   jsonschema
     #   requests
+iniconfig==2.0.0
+    # via pytest
 ipykernel==6.29.4
     # via jupyterlab
 ipython==8.24.0
@@ -156,6 +158,7 @@ packaging==24.0
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
+    #   pytest
 pandas==2.2.2
     # via -r requirements.in
 pandocfilters==1.5.1
@@ -166,6 +169,8 @@ pexpect==4.9.0
     # via ipython
 platformdirs==4.2.1
     # via jupyter-core
+pluggy==1.5.0
+    # via pytest
 prometheus-client==0.20.0
     # via jupyter-server
 prompt-toolkit==3.0.43
@@ -184,6 +189,8 @@ pygments==2.17.2
     # via
     #   ipython
     #   nbconvert
+pytest==8.3.3
+    # via -r requirements.in
 python-dateutil==2.9.0.post0
     # via
     #   arrow
