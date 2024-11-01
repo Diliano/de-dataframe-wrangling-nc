@@ -12,4 +12,5 @@ def increase_price(df, percentage):
 
 
 def get_best_value(df):
-    pass
+    df["cost_per_calorie"] = df["price"] / df["calories"]
+    return df.nsmallest(1, "cost_per_calorie")

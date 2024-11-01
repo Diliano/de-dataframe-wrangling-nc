@@ -25,3 +25,14 @@ class TestIncreasePrice:
         result = increase_price(test_df, test_percentage)
         # Assert
         assert list(result["price"]) == expected_prices
+
+
+class TestGetBestValue:
+    def test_finds_doughnut_with_cheapest_cost_per_calorie(self):
+        # Arrange
+        test_df = create_df("./data/doughnuts.json")
+        # Act
+        result = get_best_value(test_df)
+        # Assert
+        assert len(result) == 1
+        assert list(result["doughnut_type"]) == ["Choccy Delight"]
