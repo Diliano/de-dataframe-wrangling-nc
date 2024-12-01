@@ -1,3 +1,4 @@
-# Data Wrangling with Pandas
+# Data Engineering Bootcamp - Pandas
+## Overview
 
-Instructions for today's sprint can be found at: https://l2c.northcoders.com/courses/data-toolkit/data-wrangling
+This repository contains work completed as part of the Pandas Sprint during my Data Engineering Bootcamp. 
